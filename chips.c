@@ -172,6 +172,25 @@ const prom_t proms[] = {
 	.gnd		= 12,
 },
 {
+	/** Found in Tape Interface Board -- 0x0dada */
+	.name		= "D2732A",
+	.pins		= 24,
+	.addr_width = 12,
+	.addr_pins = {
+		8, 7, 6, 5, 4, 3, 2, 1, 23, 22, 19, 21,
+	},
+
+	.data_width = 8,
+	.data_pins = {
+		9, 10, 11, 13, 14, 15, 16, 17,
+	},
+	.hi_pins	= { 24 },
+	.lo_pins	= { 12, 18, 20 },
+
+	.vcc		= 24,
+	.gnd		= 12,
+},
+{
 	/** 512x8 PROM -- UNTESTED */	
 	.name		= "TBP28S42",
 	.pins		= 20,
